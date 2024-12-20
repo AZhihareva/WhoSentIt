@@ -1,0 +1,120 @@
+/* header */
+#Who-Sent-It {
+  margin-top: 40px;
+  width: 680px;
+}
+#header {
+  color: white;
+  height: 250px;
+  width: 100%;
+}
+
+/* general stylings */
+#container {
+  width: 100%;
+}
+.name-and-button {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  border-radius: var(--round-corner);
+  border: none;
+  font-size: 14px;
+  text-align: center;
+
+  color: white;
+  display: inline-block;
+  margin-top: 3%;
+  margin-right: 9px;
+}
+
+/* participants list */
+#participants-container {
+  width: 500px;
+  margin: auto;
+}
+.participant {
+  font-size: 20px;
+  padding: 2.8% 1.5% 0.7% 1.5%;
+  background-color: white;
+  border-radius: var(--round-corner);
+  margin: 1.5%;
+  margin-left: 15px;
+  margin-bottom: 3%;
+  color: var(--red);
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+  height: 35px;
+}
+.participant p {
+  padding-left: 27px;
+  margin: 0px;
+  overflow-x: hidden;
+  max-width: 85%;
+}
+.delete {
+  background-color: var(--red);
+  margin-top: 8px;
+}
+.delete:hover {
+  transition: 0.3s;
+  background-color: var(--light-red);
+}
+
+/* form */
+#form-container {
+  width: 500px;
+  margin: auto;
+}
+#new-participant-form {
+  margin: 3% 3%;
+  margin-right: 5px;
+  width: 83%;
+  border-radius: var(--round-corner);
+  background-color: white;
+}
+#participant-input {
+  color: var(--green);
+  width: 85%;
+  height: 35px;
+  font-size: 20px;
+  border: none;
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+#participant-input::placeholder {
+  color: var(--green);
+}
+#submit {
+  background-color: var(--green);
+  margin-top: 3%;
+  margin-right: 9px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+/* play button */
+#play {
+  cursor: pointer;
+  background-color: var(--green);
+  color: white;
+  font-size: 2.2em;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  width: 215px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 26px;
+  padding-bottom: 23px;
+}
+#play:hover, #submit:hover {
+  transition: 0.3s;
+  background-color: var(--light-green);
+}

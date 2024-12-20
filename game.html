@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Who Sent It?</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="game.css" type="text/css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/75dcdedcfd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header" onclick="home()">
+      <img id="Who-Sent-It" src="WhoSentIt.png" alt="Who Sent It">
+    </div>
+
+    <div id="buttons-container">
+      <div class="header-button views" id="search-by-sender" onmouseover="hoverSender()" onmouseout="unhoverSender()" onclick="searchBySender()">
+        Search by Sender
+      </div>
+      <div class="header-button views" id="search-by-recipient" onmouseover="hoverRecipient()" onmouseout="unhoverRecipient()" onclick="searchByRecipient()">
+        Search by Recipient
+      </div>
+      <div class="header-button actions" id="edit-list" onclick="edit()">
+        Edit Participants List
+      </div>
+      <div class="header-button actions" id="generate-new" onclick="generateNewSolution()">
+        Generate New Solution
+      </div>
+    </div>
+
+    <div id="container">
+      <section id="lookup-container">
+        <p id="for">Recipient for </p>
+
+        <div class="wrapper" id="wrapper">
+          <select class="Senders" id="menu" onchange="fill()">
+          </select>
+        </div>
+
+        <p id="is">is:</p>
+        <!-- Got the gist of how to do a slide reveal from:
+        https://codepen.io/renatocontaifer/pen/xfAHG  -->
+        <div id="chosen-one" class="box-slide">
+          <div class="reveal-content" id="reveal-content">Recipient</div>
+          <div class="reveal-top">
+            <div class="reveal-content caption" id="caption">Hover to Reveal Sender</div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <script src="game.js"></script>
+
+  </body>
+</html>

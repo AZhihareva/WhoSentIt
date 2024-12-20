@@ -1,0 +1,116 @@
+/* header */
+#Who-Sent-It {
+  margin-top: 20px;
+  width: 400px;
+}
+#header {
+  margin: auto;
+  display: inline-block;
+  background-color: var(--back);
+  color: white;
+  height: 150px;
+  width: 400px;
+  text-align: left;
+}
+
+/* buttons bar */
+#buttons-container {
+  font-size: 22px;
+  margin-left: 2.5%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.header-button {
+  border-radius: var(--round-corner);
+  cursor: pointer;
+  padding: 12px 50px;
+}
+.header-button:hover {
+  transition: 0.3s;
+}
+.actions:hover {
+  background-color: white;
+  color: var(--back);
+}
+#search-by-sender {
+  background-color: var(--red);
+}
+
+/* main body container */
+#container {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+#lookup-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#container p {
+  font-size: 27px;
+}
+#for {
+  margin-left: 55px;
+  margin-right: 25px;
+}
+#is {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+/* dropdown */
+#wrapper {
+  margin-top: 17px;
+}
+select {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-align-last: center;
+  font-size: 25px;
+  border: none;
+  height: 50px;
+  color: var(--back);
+}
+option {
+  text-align: center;
+}
+
+/* slide reveal */
+/* Got the gist of how to do a slide reveal from:
+https://codepen.io/renatocontaifer/pen/xfAHG */
+.box-slide {
+  width: 350px;
+  position: relative;
+  margin-top: 15px;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 25px;
+}
+.box-slide:hover .reveal-top {
+  top: -100%;
+}
+.reveal-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--green);
+  transition: left 0.4 ease;
+  border-radius: var(--round-corner);
+}
+.reveal-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  border-radius: var(--round-corner);
+}
+.caption {
+  background-color: white;
+  color: var(--back);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Who Sent It?</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="home.css" type="text/css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/75dcdedcfd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <img id="Who-Sent-It" src="WhoSentIt.png" alt="Who Sent It">
+    </div>
+
+    <section id="container">
+
+      <div id="participants-container">
+        <!-- Example Participant
+        <div class="name-and-button">
+          <article class="participant">
+            <p>Example name</p>
+          </article>
+          <button class="delete" onclick="deleteParticipant()">-</button>
+        </div> -->
+
+      </div>
+
+      <div id="form-container">
+        <div class="name-and-button">
+          <form id="new-participant-form">
+            <input id="participant-input" type="text" name="name" placeholder="Add Participants">
+          </form>
+
+          <button id="submit" onclick="submit()">+</button>
+        </div>
+      </div>
+
+      <div id="play" onclick="play()">Play!</div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
